@@ -33,14 +33,14 @@
     </div>
 
     <script>
-        let outputScreen = document.getElementById("output-screen");
+        let output = document.getElementById("output-screen");
 
         function display(num){
-            outputScreen.value += num;
+            output.value += num;
         }
         function Calculate(){
             try{
-                outputScreen.value=eval(outputScreen.value);
+                output.value=eval(output.value);
             }
             catch(err)
             {
@@ -49,11 +49,11 @@
         }
 
         function Clear(){
-            outputScreen.value="";
+            output.value="";
         }
 
         function del(){
-            outputScreen.value=outputScreen.value.slice(0,-2);
+            output.value=output.value.slice(0,-2);
         }
 
 
